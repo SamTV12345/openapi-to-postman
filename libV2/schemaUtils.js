@@ -750,6 +750,7 @@ let QUERYPARAM = 'query',
     return cryptojs.SHA1(input).toString(cryptojs.enc.Hex);
   },
 
+
   fakeSchema = (context, schema, shouldGenerateFromExample = true) => {
     try {
       let stringifiedSchema = typeof schema === 'object' && (JSON.stringify(schema)),
