@@ -4,7 +4,7 @@
 const _ = require('lodash'),
   sdk = require('postman-collection'),
   async = require('async'),
-  crypto = require('crypto'),
+  cryptojs = require('crypto-js'),
   schemaFaker = require('../assets/json-schema-faker.js'),
   xmlFaker = require('./xmlSchemaFaker.js'),
   utils = require('./utils'),
@@ -91,7 +91,7 @@ schemaFaker.option({
  * @returns {*} sha1 hash of the string
  */
 function hash(input) {
-  return crypto.createHash('sha1').update(input).digest('base64');
+  return cryptojs.SHA1(input).toString(cryptojs.enc.Hex);
 }
 
 /**

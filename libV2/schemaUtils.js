@@ -76,7 +76,7 @@ const schemaFaker = require('../assets/json-schema-faker'),
   SCHEMA_SIZE_OPTIMIZATION_THRESHOLD = 50 * 1024,
 
   PROPERTIES_TO_ASSIGN_ON_CASCADE = ['type', 'nullable', 'properties'],
-  crypto = require('crypto'),
+  cryptojs = require('crypto-js'),
 
   /**
    * @param {*} rootObject - the object from which you're trying to read a property
@@ -747,7 +747,7 @@ let QUERYPARAM = 'query',
    * @returns {*} sha1 hash of the string
    */
   hash = (input) => {
-    return crypto.createHash('sha1').update(input).digest('base64');
+    return cryptojs.SHA1(input).toString(cryptojs.enc.Hex);
   },
 
   fakeSchema = (context, schema, shouldGenerateFromExample = true) => {

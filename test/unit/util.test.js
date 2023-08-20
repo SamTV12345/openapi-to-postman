@@ -3,11 +3,12 @@ var expect = require('chai').expect,
   SchemaUtils = require('../../lib/schemaUtils.js'),
   Utils = require('../../lib/utils.js'),
   deref = require('../../lib/deref.js'),
-  crypto = require('crypto'),
+    cryptojs = require("crypto-js"),
   hash = (input) => {
-    return crypto.createHash('sha1').update(input).digest('base64');
+    return cryptojs.SHA1(input).toString(cryptojs.enc.Hex);
   },
   concreteUtils = require('./../../lib/30XUtils/schemaUtils30X');
+const cryptojs = require("crypto-js");
 
 /* Utility function Unit tests */
 describe('UTILITY FUNCTION TESTS', function() {
