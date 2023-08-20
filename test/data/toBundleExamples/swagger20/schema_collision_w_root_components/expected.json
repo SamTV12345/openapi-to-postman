@@ -25,7 +25,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/definitions/_schemas_user.yaml_zfNS"
+                  "$ref": "#/definitions/_schemas_user.yaml_cdf3"
                 }
               }
             }
@@ -60,7 +60,7 @@
         }
       }
     },
-    "_schemas_user.yaml_zfNS": {
+    "_schemas_user.yaml_cdf3": {
       "type": "object",
       "properties": {
         "aCollisionedItem": {

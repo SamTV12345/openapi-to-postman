@@ -42,7 +42,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/_schemas___user.yaml_RQm8"
+                  "$ref": "#/components/schemas/_schemas___user.yaml_4509"
                 }
               }
             }
@@ -59,7 +59,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/_schemas___user.yaml_mvS0"
+                  "$ref": "#/components/schemas/_schemas___user.yaml_9af4"
                 }
               }
             }
@@ -81,7 +81,7 @@
           }
         }
       },
-      "_schemas___user.yaml_RQm8": {
+      "_schemas___user.yaml_4509": {
         "type": "object",
         "properties": {
           "otherCollisionedId": {
@@ -92,7 +92,7 @@
           }
         }
       },
-      "_schemas___user.yaml_mvS0": {
+      "_schemas___user.yaml_9af4": {
         "type": "object",
         "properties": {
           "aCollisionedItem": {
