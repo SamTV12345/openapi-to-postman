@@ -3,7 +3,7 @@ var expect = require('chai').expect,
   SchemaUtils = require('../../lib/schemaUtils.js'),
   Utils = require('../../lib/utils.js'),
   deref = require('../../lib/deref.js'),
-    cryptojs = require("crypto-js"),
+  cryptojs = require('crypto-js'),
   hash = (input) => {
     return cryptojs.SHA1(input).toString(cryptojs.enc.Hex);
   },
