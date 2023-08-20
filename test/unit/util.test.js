@@ -8,7 +8,6 @@ var expect = require('chai').expect,
     return cryptojs.SHA1(input).toString(cryptojs.enc.Hex);
   },
   concreteUtils = require('./../../lib/30XUtils/schemaUtils30X');
-const cryptojs = require("crypto-js");
 
 /* Utility function Unit tests */
 describe('UTILITY FUNCTION TESTS', function() {
